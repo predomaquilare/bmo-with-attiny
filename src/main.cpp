@@ -1,18 +1,27 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+/*
+PWM: D0,D1,D3 and D4
+Analog inputs: D2, D3 and D4
+Extern interruptions: D2
+I²C: D0(SDA) and D2(SCL)
+SPI: D0(MOSI), D1(MISO) and D2(SCLK)
+
+REGISTERS
+PORTxn = PB5 --> PB0  // 6 BITS IO  00111111
+DDxn
+PINxn
+*/
+
+#define bot1 
+#define SDA PB0
+#define SCL PB2 
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  DDRB |= (<<PB)
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
